@@ -14,6 +14,9 @@ public class Hello {
         var z = 2;
         double wynik = x * y/z + x;
         double w = Math.sqrt(x);
+        double c = 9.97;
+        int nc = (int)c;    // rzutowanie zmiennych z wiekszej na mniejsza ze stratą
+
         System.out.println(w);
 
         System.out.println("Hello world!");
@@ -21,6 +24,7 @@ public class Hello {
         System.out.println(wiekDelikwenta);
         System.out.println(zarobki);
         System.out.println(wynik);
+        System.out.println(nc);
 
     }
 }
