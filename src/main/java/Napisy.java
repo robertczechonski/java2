@@ -23,6 +23,7 @@ public class Napisy {
         System.out.println(powitanie.equalsIgnoreCase(powitanie2));
         System.out.println(powitanie.charAt(1));
         System.out.println(replace);
+        System.out.printf("Mamy rok %d i miesiąć %d",year,mon);
 
     }
 }
