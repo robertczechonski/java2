@@ -17,6 +17,13 @@ public class Hello {
         double c = 9.97;
         int nc = (int)c;    // rzutowanie zmiennych z wiekszej na mniejsza ze stratą
 
+        x = x + 4;
+        x += 4;
+        int n = 12;
+        n++;
+        n--;
+
+
         System.out.println(w);
 
         System.out.println("Hello world!");
@@ -25,6 +32,11 @@ public class Hello {
         System.out.println(zarobki);
         System.out.println(wynik);
         System.out.println(nc);
+        System.out.println(x == n); // porównanie
+        System.out.println(x != n);
+        // > < <= >=
+        // &&  ||
+        System.out.println(x < y ? x: y);// warunek ? wyrazenie1 : wyrazenie2
 
     }
 }
