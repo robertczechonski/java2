@@ -14,12 +14,31 @@ public class Emerytura {
         double balance = 0;
         int years = 0;
 
-        while (balance < goal){
+        read_data:
+        while (years <= 100){
             balance += payment;
             double interest = balance * interestRate / 100;
             balance += interest;
+            if (balance >= goal) break read_data;
             years++;
         }
+
+
+//        while (years <= 100){
+//            balance += payment;
+//            double interest = balance * interestRate / 100;
+//            balance += interest;
+//            if (balance >= goal) break;
+//            years++;
+//        }
+
+//        while (years <= 100 && balance < goal){
+//            balance += payment;
+//            double interest = balance * interestRate / 100;
+//            balance += interest;
+//            if (balance < goal)
+//                years++;
+//        }
         System.out.println("Mozes przejsc na emeryture za "+ years + " lat");
 
 //        do {
@@ -58,7 +77,7 @@ public class Emerytura {
 //                System.out.println("Wybrałeś " + choice);break;
 //            default:
 //                System.out.println("Zły wybor");
-        }
+//        }
 
     }
 }
